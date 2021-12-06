@@ -1,0 +1,49 @@
+#counter-function-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #212121;
+    width: 300px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+#counter-input-div{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    height: 5vh;
+    width: 300px;
+    border-style: none;
+    background-color: #2c2c2c ;
+    border-radius: 100px;
+    margin: auto 10px;
+    box-shadow: inset 5px 4px 10px #0e0e0e;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: solid rgb(99, 99, 99) 1px;
+    margin-top: 20px;
+}
+
+button {
+    border-style: none;
+    height: 100px;
+    width: 100px;
+    background-color: #212121;
+    color: rgb(205, 205, 205);
+    font-size: 40px;
+    border-radius: 100px;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+button p{
+    color: white;
+}
+

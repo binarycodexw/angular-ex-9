@@ -1,0 +1,8 @@
+<div id="counter-input-div">
+    <input type="number" placeholder="Add a number" [(ngModel)]="value">
+</div>
+<div id="counter-function-div">
+    <button (click)="operateCounterSubtraction()">-</button>
+    <app-counter-display></app-counter-display>
+    <button (click)="operateCounterSum()">+</button>
+</div>
