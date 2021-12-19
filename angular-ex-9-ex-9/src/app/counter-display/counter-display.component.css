@@ -1,0 +1,17 @@
+#counter-display-div{
+    display: flex;
+    justify-content: center;
+    background-color: #3b3b3b;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: 0px 9px 5px rgb(34, 34, 34);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+}
