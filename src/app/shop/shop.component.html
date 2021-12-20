@@ -1,0 +1,29 @@
+    <div>
+        <select  [(ngModel)]="BeerName" name="beerName" id="BeerName">
+            <option value="" disabled selected>Choose Your beer</option>
+            <option *ngFor="let beer of beers">{{beer.name}}</option>
+        </select>
+        
+        <select [(ngModel)]= "BeerSize" name="beerSize" id="BeerSize">
+            <option value="" disabled selected>Select the Size</option>
+            <option>medium</option>
+            <option>small</option>
+          </select>
+    </div>
+  
+      
+  <button (click)="cliccato()" type="submit">Search</button>
+
+
+
+  <div>
+    <div *ngIf="beer$ | async as beer; else hideBeer">
+      <p>Name: {{ beer.name }}</p>
+      <p>Type: {{ beer.type }}</p>
+      <p>Price: {{ beer.price }}$</p>
+    </div>
+  </div>
+  
+  <ng-template #hideBeer>
+    <p>Select an available beer from the shop</p>
+  </ng-template>
